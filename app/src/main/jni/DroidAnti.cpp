@@ -13,5 +13,6 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *jvm, void *reserved) {
     } else {
         LOGD("no debuggee!");
     }
+    anti_debug_antiPtrace();
     return JNI_VERSION_1_6;
 }
